@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Master Flashcards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="excel-app">
+        <header>
+            <div class="logo-box">
+                <i class="fas fa-file-excel"></i>
+                <h1>Excel Formula Master</h1>
+            </div>
+            <div class="progress-section">
+                <div class="progress-text">Tiến độ học tập: <span id="percent">0%</span></div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="progress-bar"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="card-container" id="flashcard">
+                <div class="card" id="card-inner">
+                    <div class="front">
+                        <div class="tag">Câu hỏi</div>
+                        <p id="question-text">Mô tả chức năng hàm</p>
+                    </div>
+                    <div class="back">
+                        <div class="tag">Công thức</div>
+                        <div class="formula-content">
+                            <h2 id="formula-name">HÀM()</h2>
+                            <p id="formula-detail">Cấu trúc và ví dụ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="controls">
+            <button class="btn" id="prev-btn"><i class="fas fa-chevron-left"></i> Trước</button>
+            <div class="counter"><span id="current">1</span> / <span id="total">30</span></div>
+            <button class="btn" id="next-btn">Sau <i class="fas fa-chevron-right"></i></button>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
